@@ -21,14 +21,11 @@ def encode_data(passwd):
     if len(passwd) == 11:
         passwd += [0]
     elif (r > 0):
-        passwd = passwd + [0] * (key_len - r)
+        passwd += [0] * (key_len - r)
 
     for n in range(0, len(passwd), len(key)):
-        ki = 0
-        for j in range(n, min(n+len(key), len(passwd))):
+        for ki, j in enumerate(range(n, min(n+len(key), len(passwd)))):
             passwd[j] = passwd[j] ^ key[ki]
-            ki += 1
-
     return bytearray(passwd)
 
 if __name__ == "__main__":
