@@ -37,6 +37,19 @@
                 "Invoke-Command { Write-Host 'Completed Test task in task runner.' }"
             ],
             "problemMatcher": "$pester"
+        },
+        {
+            "type": "shell",
+            "label": "npm install",
+            "command": "npm",
+            "args": [
+                "install",
+                "--global",
+                "yarn"
+            ],
+            "presentation": {
+                "reveal": "silent"
+            }
         }
-	]
+    ]
 }

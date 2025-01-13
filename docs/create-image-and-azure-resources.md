@@ -93,6 +93,7 @@ Finally, run `GenerateResourcesAndImage` function setting mandatory arguments: i
 - `ImageType` - what image to build (we suggest choosing "UbuntuMinimal" here, other valid options are "Windows2019", "Windows2022", "Ubuntu2004", "Ubuntu2204")
 
 > :warning: When running `GenerateResourcesAndImage` in PowerShell 7.3, following command should be executed first:
+>
 > ```powershell
 > $PSNativeCommandArgumentPassing = 'Legacy'
 > ```
