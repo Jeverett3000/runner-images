@@ -6,3 +6,4 @@ $devEnvPath = "$vsInstallRoot\Common7\IDE\devenv.exe"
 & "$devEnvPath" /RootSuffix Exp /ResetSettings General.vssettings /Command File.Exit | Out-Null
 
 cmd.exe /c "`"$devEnvPath`" /updateconfiguration"
+Export-ModuleMember -Variable 'vsInstallRoot'
